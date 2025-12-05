@@ -1,7 +1,7 @@
-import "./WeatherCard.css";
+import "./ItemCard.css";
 
-function WeatherCard() {
-  return <div className="weather-card">{/* Weather card content here */}</div>;
+function ItemCard() {
+  return <div className="item-card">{/* Weather card content here */}</div>;
 }
 
-export default WeatherCard;
+export default ItemCard;

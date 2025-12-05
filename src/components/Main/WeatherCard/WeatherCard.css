@@ -1,3 +1,24 @@
 .weather-card {
-  /* WeatherCard styles here */
+  padding: 20px 16px;
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url(../../../assets/WeatherConditions/sunny.svg);
+  background-size: cover;
+  background-position: top right;
+  height: 80px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.weather-card__temp {
+  font-family: "Cabinet Grotesk", Courier, monospace;
+  font-weight: 700;
+  font-size: 36px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 1);
 }
