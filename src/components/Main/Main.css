@@ -6,3 +6,9 @@
   list-style-type: none;
   gap: 20px;
 }
+
+.cards__text {
+  font-family: "Cabinet Grotesk", Courier, monospace;
+  font-weight: 700;
+  font-size: 16px;
+}
