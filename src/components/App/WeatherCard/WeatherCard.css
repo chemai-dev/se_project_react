@@ -1,16 +1,10 @@
 .weather-card {
-  padding: 20px 16px;
-  margin-bottom: 40px;
-
   display: flex;
-  align-items: center;
+  position: relative;
 
-  background-image: url(../../../assets/WeatherConditions/sunny.svg);
-  background-size: cover;
-  background-position: top right;
-  height: 80px;
-  max-width: 100%;
   border-radius: 12px;
+  height: 80px;
+  overflow: hidden;
 }
 
 .weather-card__temp {
@@ -18,7 +12,17 @@
   font-weight: 700;
   font-size: 36px;
 
-  margin: 0;
+  position: absolute;
+
+  top: 20px;
+  left: 16px;
 
   color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+
+.weather-card__image {
+  object-position: top right;
+  object-fit: cover;
+  width: 100%;
 }

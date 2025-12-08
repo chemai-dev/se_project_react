@@ -21,8 +21,9 @@
   display: flex;
   flex-direction: column;
 
-  height: 400px;
   border-radius: 20px;
+  height: 400px;
+  overflow: hidden;
 }
 
 .modal__title {
@@ -38,10 +39,16 @@
   top: 20px;
   right: 28px;
 
-  background-image: url(../../../assets/cross-icon.svg);
+  background-image: url(../../../assets/cross-icon-dark.svg);
+  background-size: cover;
+  background-color: transparent;
   border-style: none;
   height: 20px;
   width: 20px;
+}
+
+.modal__close-button_type_light {
+  background-image: url(../../../assets/cross-icon-light.svg);
 }
 
 .modal__content {
@@ -117,4 +124,35 @@
   width: fit-content;
   margin-top: 24px;
   padding: 8px 16px;
+}
+
+/* Item Modal Styling */
+.modal__content_type_image {
+  height: fit-content;
+  padding: 0;
+}
+.modal__image {
+  height: 498px;
+}
+.modal__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  padding: 20px 32px 32px;
+}
+.modal__caption {
+  font-family: "Cabinet Grotesk", Courier, monospace;
+  font-weight: 700;
+  font-size: 20px;
+
+  margin: 0;
+}
+
+.modal__weather {
+  font-family: "Cabinet Grotesk", Courier, monospace;
+  font-weight: 700;
+  font-size: 20px;
+
+  margin: 0;
 }
