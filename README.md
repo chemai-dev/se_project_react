@@ -1,8 +1,26 @@
-# React + Vite
+# Project: Project-React (WTWR Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![screen-shot](./src/assets/project-screenshot.png)
 
-Currently, two official plugins are available:
+### Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project-React is the frontend for the full-stack “WTWR — What To Wear?” application. WTWR helps users decide what clothing to wear based on real-time weather data. This version of the app will fetch weather info from a Weather API and automatically recommend suitable clothing items.
+
+This project focuses on building the React-based frontend, applying core concepts such as components, props, state management, hooks, and modular architecture. It also lays the foundation for future backend integration.
+
+### Tools & Technologies
+
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS
+- Responsive Design
+- OpenWeather API Integration
+
+## Project links
+
+[GitHub Link:](git@github.com:chemai-dev/se_project_react.git)
+
+### WIP
+
+This project is still under development. Future iterations will include API-driven weather data, clothing recommendations, expanded user interactions, and backend connectivity.
