@@ -1,4 +1,5 @@
 import "../ModalWithForm/ModalWithForm.css";
+import "./ItemModal.css";
 
 function ItemModal({ activeModal, card, handleCloseClick }) {
   return (
