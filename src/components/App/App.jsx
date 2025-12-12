@@ -42,6 +42,16 @@ function App() {
     setActiveModal("");
   };
 
+  const onAddItem = (data) => {
+    const newCardData = {
+      name: data.name,
+      link: data.link,
+      weather: data.weatherType,
+    };
+    setClothingItems([...clothingItems, newCardData]);
+    closeActiveModal();
+  };
+
   useEffect(() => {
     getWeather(coordinates, apiKey)
       .then((data) => {
@@ -65,19 +75,15 @@ function App() {
             handleCardClick={handleCardClick}
           />
         </div>
-        {/* <ModalWithForm
-          title="New garment"
-          buttonText="Add garment"
-          isOpen={activeModal === "add-garment"}
-          handleCloseClick={closeActiveModal}
-        ></ModalWithForm> */}
+
         <AddItemModal
           title="New garment"
           name="new-card"
           buttonText="Add garment"
-          onCloseModale={closeActiveModal}
           isOpen={activeModal === "add-garment"}
-          handleCloseClick={closeActiveModal}
+          onCloseModal={closeActiveModal}
+          handleSubmit={handleAddClick}
+          onAddItem={onAddItem}
         />
         <ItemModal
           isOpen={activeModal === "preview"}
