@@ -1,9 +1,15 @@
 import "./Profile.css";
+import SideBar from "../SideBar/SideBar.jsx";
+import ClothesSelection from "../ClothesSelection/ClothesSelection.jsx";
 
-function Profile() {
+function Profile({ clothingItems, handleCardClick }) {
   return (
     <section className="profile">
-      {/* Profile content here */}
+      <SideBar />
+      <ClothesSelection
+        clothingItems={clothingItems}
+        onCardClick={handleCardClick}
+      />
     </section>
   );
 }

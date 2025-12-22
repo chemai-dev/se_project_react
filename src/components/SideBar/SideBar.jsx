@@ -1,9 +1,13 @@
 import "./SideBar.css";
+import avatar from "../../assets/app-avatar.svg";
 
 function SideBar() {
   return (
     <aside className="sidebar">
-      {/* SideBar content here */}
+      <div className="sidebar__user-container">
+        <p className="sidebar__username">Admin</p>
+        <img src={avatar} alt="Admin" className="sidebar__user-avatar" />
+      </div>
     </aside>
   );
 }

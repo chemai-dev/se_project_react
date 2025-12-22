@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { coordinates, apiKey } from "../../utils/constants";
 import { defaultClothingItems } from "../../utils/constants";
@@ -6,13 +7,13 @@ import { getWeather, filterWeatherData } from "../../utils/weatherApi";
 
 import Header from "./Header/Header";
 import Main from "../Main/Main";
+import Profile from "../Profile/Profile";
 import ModalWithForm from "./ModalWithForm/ModalWithForm";
 import ItemModal from "./ItemModal/ItemModal";
 import "./ModalWithForm/ModalWithForm.css";
 import Footer from "./Footer/Footer";
 import CurrentTemperatureUnitContext from "../../contexts/CurrentTemperatureUnit";
 import AddItemModal from "../AddItemModal/AddItemModal";
-import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [weatherData, setWeatherData] = useState({
@@ -84,7 +85,12 @@ function App() {
             />
             <Route
               path="/profile"
-              element={<p>you have reached the profile page</p>}
+              element={
+                <Profile
+                  clothingItems={clothingItems}
+                  handleCardClick={handleCardClick}
+                />
+              }
             />
           </Routes>
         </div>
