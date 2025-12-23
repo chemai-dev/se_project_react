@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "name": "Coat",
+      "imageUrl": "https://png.pngtree.com/png-vector/20240712/ourmid/pngtree-d-blue-khaki-double-breasted-long-black-trench-coat-men-british-png-image_13054536.png",
+      "weather": "cold",
+      "_id": 19
+    },
+    {
+      "name": "Jacket",
+      "imageUrl": "https://png.pngtree.com/png-vector/20250408/ourmid/pngtree-black-man-jacket-png-image_15927912.png",
+      "weather": "",
+      "_id": 20
+    },
+    {
+      "name": "Hoodie",
+      "imageUrl": "https://png.pngtree.com/png-vector/20231014/ourmid/pngtree-white-hoodie-mockup-cutout-png-file-png-image_10159088.png",
+      "weather": "cold",
+      "_id": 21
+    },
+    {
+      "name": "Jeans",
+      "imageUrl": "https://pngimg.com/d/jeans_PNG5748.png",
+      "weather": "warm",
+      "_id": 22
+    },
+    {
+      "name": "Loafers",
+      "imageUrl": "https://deltoroshoes.com/cdn/shop/files/men-cognac-croc-milano-loafer.png?v=1732296136&width=2048",
+      "weather": "",
+      "_id": 23
+    },
+    {
+      "name": "Scarf",
+      "imageUrl": "https://pngimg.com/d/scarf_PNG2.png",
+      "weather": "cold",
+      "_id": 25
+    },
+    {
+      "name": "Shorts",
+      "imageUrl": "https://png.pngtree.com/png-vector/20240801/ourmid/pngtree-men-s-casual-cargo-cut-pants-shorts-png-image_13321361.png",
+      "weather": "",
+      "_id": 27
+    },
+    {
+      "name": "Sneakers",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0771/7204/8174/files/VNLU__WX02_1.png?v=1717607418",
+      "weather": "",
+      "_id": 28
+    },
+    {
+      "name": "Sunglasses",
+      "imageUrl": "https://pngfile.net/files/preview/960x960/4381743876634pqzrdswig9mo79cbrjksapj2bqoofjc38fk8e4utndi96mqgshgyly2dnjawldskhkwhh9c6k0ispp8fdvkbemggemc7sgxmia59.png",
+      "weather": "hot",
+      "_id": 29
+    },
+    {
+      "name": "Sweatshirt",
+      "imageUrl": "https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-plain-white-sweatshirt-mockup-png-image_12785986.png",
+      "weather": "warm",
+      "_id": 30
+    },
+    {
+      "name": "T-Shirt",
+      "imageUrl": "https://png.pngtree.com/png-vector/20231016/ourmid/pngtree-isolated-blank-t-shirt-front-png-image_10189369.png",
+      "weather": "hot",
+      "_id": 31
+    },
+    {
+      "name": "Boots",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0322/6841/9208/files/Argon_MahoganyLeather_250212_01_3000x3273_0-8_3000x3273_c2f9b1e2-fb47-45c3-8d8f-df497dee835b.png?v=1741067582",
+      "weather": "cold",
+      "_id": 32
+    },
+    {
+      "name": "Sandals",
+      "imageUrl": "https://timberland.co.za/cdn/shop/files/A419HV13-HERO.png?v=1740985776&width=3840",
+      "weather": "hot",
+      "_id": 33
+    },
+    {
+      "name": "Cap",
+      "imageUrl": "https://liftdown.com/cdn/shop/files/Bluestone-Green2.png?v=1764884509&width=2000",
+      "weather": "",
+      "_id": 34
+    }
+  ]
+}

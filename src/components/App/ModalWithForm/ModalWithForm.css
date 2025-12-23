@@ -137,11 +137,16 @@
 }
 .modal__footer {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  justify-content: space-between;
 
   padding: 20px 32px 32px;
 }
+.modal__footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .modal__caption {
   font-family: "Cabinet Grotesk", Courier, monospace;
   font-weight: 700;
@@ -154,6 +159,18 @@
   font-family: "Cabinet Grotesk", Courier, monospace;
   font-weight: 700;
   font-size: 20px;
+
+  margin: 0;
+}
+
+.modal__footer-button {
+  font-family: "Cabinet Grotesk", Courier, monospace;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(255, 77, 0, 1);
+
+  border-style: none;
+  background-color: transparent;
 
   margin: 0;
 }
