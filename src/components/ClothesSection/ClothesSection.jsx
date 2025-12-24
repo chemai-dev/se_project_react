@@ -11,9 +11,12 @@ function ClothesSection({ clothingItems, onCardClick, onAddClick }) {
         </button>
       </div>
       <ul className="clothes-section__cards-list">
-        {clothingItems.reverse().map((item) => (
-          <ItemCard key={item._id} item={item} onCardClick={onCardClick} />
-        ))}
+        {clothingItems
+          .slice()
+          .reverse()
+          .map((item) => (
+            <ItemCard key={item._id} item={item} onCardClick={onCardClick} />
+          ))}
       </ul>
     </section>
   );

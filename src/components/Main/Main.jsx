@@ -26,6 +26,7 @@ function Main({
         <ul className="cards__list">
           {clothingItems
             .filter((item) => item.weather === weatherData.type)
+            .slice()
             .reverse()
             .map((item) => (
               <ItemCard

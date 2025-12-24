@@ -66,7 +66,7 @@ function App() {
 
     addItem(newCardData)
       .then((data) => {
-        setClothingItems([...clothingItems, data]);
+        setClothingItems((prev) => [data, ...prev]);
         closeActiveModal();
       })
       .catch(console.error);
