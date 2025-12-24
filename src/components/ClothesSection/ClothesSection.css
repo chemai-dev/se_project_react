@@ -1,14 +1,14 @@
-.clothes-selection {
+.clothes-section {
   font-family: "Cabinet Grotesk", Courier, monospace;
   font-weight: 700;
   font-size: 20px;
 }
 
-.clothes-selection__row {
+.clothes-section__row {
   display: flex;
   gap: 20px;
 }
-.clothes-selection__button {
+.clothes-section__button {
   font-family: "Cabinet Grotesk", Courier, monospace;
   font-weight: 700;
   font-size: 20px;
@@ -18,7 +18,7 @@
   opacity: 0.6;
 }
 
-.clothes-selection__cards-list {
+.clothes-section__cards-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
