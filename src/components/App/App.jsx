@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { coordinates, apiKey } from "../../utils/constants";
+import { apiKey, coordinates } from "../../utils/constants";
 import { getWeather, filterWeatherData } from "../../utils/weatherApi";
+import { getUserCoordinates } from "../../utils/geolocation";
 
 import Header from "./Header/Header";
 import Main from "../Main/Main";
@@ -73,9 +74,23 @@ function App() {
   };
 
   useEffect(() => {
-    getWeather(coordinates, apiKey)
-      .then((data) => {
-        const filteredData = filterWeatherData(data);
+    getUserCoordinates(coordinates)
+      .then((userCoordinates) => {
+        if (!userCoordinates) {
+          throw new Error("Could not obtain user coordinates");
+        }
+        // Store state/region info if available
+        const state = userCoordinates.state;
+        return getWeather(userCoordinates, apiKey).then((weatherData) => ({
+          weatherData,
+          state,
+        }));
+      })
+      .then(({ weatherData, state }) => {
+        const filteredData = filterWeatherData(weatherData);
+        if (state) {
+          filteredData.state = state;
+        }
         setWeatherData(filteredData);
       })
       .catch(console.error);
