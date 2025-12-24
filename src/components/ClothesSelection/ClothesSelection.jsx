@@ -6,7 +6,9 @@ function ClothesSelection({ clothingItems, onCardClick, onAddClick }) {
     <section className="clothes-selection">
       <div className="clothes-selection__row">
         <p>Your items</p>
-        <button onClick={onAddClick} className="clothes-selection__button">+ Add new</button>
+        <button onClick={onAddClick} className="clothes-selection__button">
+          + Add new
+        </button>
       </div>
       <ul className="clothes-selection__cards-list">
         {clothingItems.reverse().map((item) => (

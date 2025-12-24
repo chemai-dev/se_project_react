@@ -7,12 +7,6 @@
       "_id": 19
     },
     {
-      "name": "Jacket",
-      "imageUrl": "https://png.pngtree.com/png-vector/20250408/ourmid/pngtree-black-man-jacket-png-image_15927912.png",
-      "weather": "",
-      "_id": 20
-    },
-    {
       "name": "Hoodie",
       "imageUrl": "https://png.pngtree.com/png-vector/20231014/ourmid/pngtree-white-hoodie-mockup-cutout-png-file-png-image_10159088.png",
       "weather": "cold",
